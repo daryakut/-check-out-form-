@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 10vw;
+  margin-bottom: 2vh;
+}
+.form__container {
+  margin: 2vh 0 2vh 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  padding: 10px;
+  flex: 1 1 0;
+}
+.header{
+font-size: 36px;
+font-weight: 600;
+line-height: 54px;
+margin: 4vh 0;
+}
+.name__container {
+  display: flex;
+  gap: 26px;
+  justify-content: stretch;
+}
+
+.first_name,
+.second_name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 0 0;
+}
+.form_input {
+  padding: 14px;
+  border: 1px solid #c8c5c5;
+  border-radius: 4px;
+  /* color: white; */
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+  border-radius: 15px;
+}
+/* .select_input{
+  cursor: pointer;
+} */
+
+.formError {
+  color: red;
+}
+.paymentSection {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 800px;
+  flex: 1 1 0;
+  margin: 12vh 10vw 2vh 0;
+}
+.productContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-bottom: 3vh;
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+.productColumn,
+.priceColumn {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+}
+
+.priceColumn {
+  text-align: right;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 6vh;
+}
+.productColumn h2,
+.priceColumn h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.paleText {
+  color: rgb(159, 159, 159);
+}
+.goldText {
+  color: rgb(184, 142, 47);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.paymentInfo {
+}
+
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+.submitBtn {
+  padding: 15px 102px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  cursor: pointer;
+}
+.submitBtn:hover {
+  background-color: #000000;
+  color: white;
+    transition: background-color 0.5s ease;
+}
+.transferParPale {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: justify;
+  color: rgb(159, 159, 159);
+}
+.transferParNorm {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: justify;
+}
+
+
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+span.withWhiteDot::before,
+span.withBlackDot::before,
+input[type="checkbox"]:checked + .withWhiteDot::before,
+input[type="radio"]:checked + .withWhiteDot::before,
+input[type="radio"]:checked + .withBlackDot::before {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgb(159, 159, 159);
+  content: "";
+  margin-right: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span.withWhiteDot::before {
+  background-color: #fff;
+}
+
+span.withBlackDot::before {
+  background-color: #000;
+}
+
+.withBlackDot,
+.withWhiteDot {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.withBlackDot::before,
+.withWhiteDot::before {
+  content: "\2022";
+  font-size: 70px;
+  margin-right: 14px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + .withWhiteDot::before,
+input[type="radio"]:checked + .withBlackDot::before {
+  border: 2px solid transparent;
+}
+
+.withWhiteDot::before {
+  background-color: #fff;
+  border: 2px solid transparent;
+}
+
+.withBlackDot::before {
+  background-color: #000;
+}
+.chosenOption::before {
+  content: "\2022";
+  font-size: 70px;
+  margin-left: -4px;
+  margin-right: 6px;
+  color: #000;
+  vertical-align: middle;
+  display: inline-block; 
+}
+a {
+  text-decoration: none; 
+  color: #000; 
+}
+
+a:hover {
+  text-decoration: underline; 
+}

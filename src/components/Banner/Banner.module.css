@@ -1,0 +1,7 @@
+.banner__container {
+  background: url("../../assets/backgroundimg.png");
+  height: 316px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

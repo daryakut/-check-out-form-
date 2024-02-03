@@ -1,0 +1,14 @@
+<svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip2_32">
+			<rect id="akar-icons:heart" width="28.000000" height="28.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="akar-icons:heart" width="28.000000" height="28.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2_32)">
+		<path id="Vector" d="M2.33301 9.27499C2.33301 11.8498 3.35352 17.9608 13.4023 24.1383C13.582 24.2479 13.7891 24.3058 14 24.3058C14.21 24.3058 14.417 24.2479 14.5967 24.1383C24.6455 17.9608 25.666 11.8498 25.666 9.27499C25.666 6.08533 23.0537 3.5 19.833 3.5C16.6123 3.5 14 7 14 7C14 7 11.3877 3.5 8.16602 3.5C4.94531 3.5 2.33301 6.08533 2.33301 9.27499Z" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+	</g>
+</svg>
