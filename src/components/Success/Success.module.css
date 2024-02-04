@@ -66,3 +66,8 @@
   transform: translateY(2px);
   box-shadow: none;
 } 
+@media (max-width: 600px){
+  .successBlock{
+      padding: 10px 60px;
+  }
+} 

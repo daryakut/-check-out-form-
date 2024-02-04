@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
 import classes from "./Header.module.css";
 import logo from "../../assets/logo.svg";
@@ -9,6 +9,19 @@ import user from "../../assets/user.svg";
 import search from "../../assets/search.svg";
 
 const Header = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <div className={classes.header__container}>
@@ -19,26 +32,62 @@ const Header = () => {
         <div className={classes.menu}>
           <nav>
             <ul>
-              <li>
+              <li
+                className={
+                  windowWidth <= 768 ? classes.hidden : classes.visible
+                }
+              >
                 <Link to="/">Home</Link>
               </li>
-              <li>
+              <li
+                className={
+                  windowWidth <= 768 ? classes.hidden : classes.visible
+                }
+              >
                 <Link to="/shop">Shop</Link>
               </li>
-              <li>
+              <li
+                className={
+                  windowWidth <= 768 ? classes.hidden : classes.visible
+                }
+              >
                 <Link to="/about">About</Link>
               </li>
-              <li>
+              <li
+                className={
+                  windowWidth <= 768 ? classes.hidden : classes.visible
+                }
+              >
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </nav>
         </div>
         <div className={classes.actions}>
-          <img src={user} alt="user" />
-          <img src={search} alt="search" />
-          <img src={heart} alt="heart" />
-          <img src={cart} alt="cart" />
+          <a href="#">
+            <img src={user} alt="user" />
+          </a>
+          <a href="#">
+            <img
+              src={search}
+              alt="search"
+              className={windowWidth <= 768 ? classes.hidden : classes.visible}
+            />
+          </a>
+          <a href="#">
+            <img
+              src={heart}
+              alt="heart"
+              className={windowWidth <= 768 ? classes.hidden : classes.visible}
+            />
+          </a>
+          <a href="#">
+            <img
+              src={cart}
+              alt="cart"
+              className={windowWidth <= 768 ? classes.hidden : classes.visible}
+            />
+          </a>
         </div>
       </div>
       <Outlet />
