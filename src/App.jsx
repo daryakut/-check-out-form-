@@ -8,32 +8,36 @@ export default function App() {
     <div>
       <Routes>
         <Route path="/" element={<Header />}>
-          <Route index element={<Home />} />
+          <Route index element={<CheckoutPage />} />
           <Route path="about" element={<About />} />
           <Route path="shop" element={<Shop />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
-      <Banner />
-      <RegisterForm />
     </div>
   );
 }
 
-function Home() {
-  return <></>;
+function CheckoutPage() {
+  return (
+    <>
+      <Banner />
+      <RegisterForm />
+    </>
+  );
 }
+
 function Shop() {
-  return <></>;
+  return <>Shop</>;
 }
 
 function About() {
-  return <></>;
+  return <>About</>;
 }
 
 function Contact() {
-  return <></>;
+  return <>Contact</>;
 }
 
 function NoMatch() {
